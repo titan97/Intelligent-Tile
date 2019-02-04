@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+          <link rel="stylesheet" href="simulation.css">
+
+          <script>
+               scr="iro.min.js";
+               var count=1;
+               function setColor(btn, color) {
+               var property = document.getElementById(btn);
+
+               var color = prompt("Enter color hexcode");
+               var demoColorPicker = new iro.ColorPicker("#color-picker-container", {
+                 width: 320,
+                 height: 320,
+                 color: {r: 255, g: 0, b: 0},
+                 markerRadius: 8,
+                 padding: 4,
+                 sliderMargin: 24,
+                 sliderHeight: 36,
+                 borderWidth: 2,
+                 borderColor: "#fff",
+                 anticlockwise: true,
+               });
+               }
+               property.style.backgroundColor = demoColorPicker.color.rgb;
+          }
+          </script>
+     </head>
+     <body>
+          <div id="grid">
+               <input type="square" id="0,0" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="1,0" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="2,0" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="3,0" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="0,1" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="1,1" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="2,1" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="3,1" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="0,2" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="1,2" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="2,2" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="3,2" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="0,3" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="1,3" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="2,3" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+               <input type="square" id="3,3" onkeydown="return false;" style= "color:white" onclick="setColor(id, '#101010')";/>
+          </div>
+
+     </body>
+</html>
